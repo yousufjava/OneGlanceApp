@@ -22,23 +22,6 @@ There’s still much to build, but this is the foundation I’m proud to share.
 **First Glance** is a minimalist health-check app designed to simplify how users understand their well-being. Instead of overwhelming users with charts and data, it generates a single wellness score from basic inputs — giving an instant snapshot of health, with the option to explore areas for improvement.
 
 ---
-
-## 🧭 Why First Glance?
-
-> I started this idea with the purpose of simplifying where your health stands compared to the general population. Health apps today often overwhelm users with data, creating a high barrier to entry for everyday people.
-
-This app reduces that friction by offering one clear metric based on general wellness indicators. Users can choose to explore deeper insights if they want to — not because they're forced to.
-
-The structure of the codebase leaves room for integrating third-party APIs such as Apple Health or Google Fit. Future iterations will use an LLM to provide personalized recommendations, and make the experience more supportive, inviting, and intelligent.
-
-A lot of care went into building a minimalist landing page with calming transitions, smooth animations, and responsive interactivity — striking the balance between useful and peaceful.
-
-There’s still much to build, but this is the foundation I’m proud to share.
-
-— *Yousuf Saquib* | *April 30, 2025 — v0.1*
-
----
-
 ## 🛠 Technical Overview
 
 **First Glance** is a lightweight, modular React web app focused on intuitive UX and extensibility.
