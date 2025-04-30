@@ -17,10 +17,6 @@ A great deal of time has gone into crafting a minimalist landing page, calming a
 There’s still much to build, but this is the foundation I’m proud to share.
 
 — *Yousuf Saquib* | *April 30, 2025 — v0.1*
-# First Glance
-
-**First Glance** is a minimalist health-check app designed to simplify how users understand their well-being. Instead of overwhelming users with charts and data, it generates a single wellness score from basic inputs — giving an instant snapshot of health, with the option to explore areas for improvement.
-
 ---
 ## 🛠 Technical Overview
 
