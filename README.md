@@ -79,7 +79,7 @@ There’s still much to build, but this is the foundation I’m proud to share.
   - Sleep hours (vs recommended range)
   - Calorie intake vs baseline needs
   - Self-reported satisfaction
-- A single score (0–100) is calculated to indicate general wellness
+- A single score (0–10) is calculated to indicate general wellness
 - Optional breakdown shows where the score was most affected
 
 ---
