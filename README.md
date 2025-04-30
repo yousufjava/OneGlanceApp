@@ -1,6 +1,6 @@
 # One Glance
 
-**One Glance** is a minimalist health tracking app designed to simplify where your health stands—at a glance.
+**One Glance** is a minimalist health tracking app designed to simplify where your health stands at a glance.
 
 ---
 
