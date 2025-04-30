@@ -8,7 +8,7 @@
 
 > “I started this idea with the purpose of simplifying where your health stands compared to the general population. Health apps today often overwhelm users with data, creating a high barrier to entry for everyday people.
 
-This app aims to reduce that friction by providing a single, digestible wellness metric. Users can expand into more details only if they choose to—making the experience empowering instead of overwhelming.
+This app aims to reduce that friction by providing a single, digestible wellness metric. Users can expand into more details only if they choose to making the experience empowering instead of overwhelming.
 
 I’ve intentionally structured the app to be scalable, with future plans to integrate Apple and Google Health APIs, and to use LLMs for personalized recommendations that feel human, not robotic.
 
