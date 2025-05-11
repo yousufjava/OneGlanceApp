@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Glance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="bgvideo.mp4" type="video/mp4" />
+</video>
+
+<!-- Header -->
+<div class="header">
+  <h1>One Glance</h1>
+</div>
+
+<!-- Satisfaction & Improvement Prompt -->
+<div class="prompt active" id="prompt-satisfaction">
+  <label class="slider-label">How satisfied are you with your body? (1–10)</label>
+  <div class="slider-container">
+    <input type="range" min="1" max="10" step="1" id="satisfaction" value="5" />
+    <div class="slider-value" id="satisfaction-value">5</div>
+  </div>
+
+  <label class="slider-label">How much do you want to improve? (1–10)</label>
+  <div class="slider-container">
+    <input type="range" min="1" max="10" step="1" id="improvement" value="5" />
+    <div class="slider-value" id="improvement-value">5</div>
+  </div>
+
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+<!-- Gender Prompt -->
+<div class="prompt" id="prompt-gender">
+  <label class="slider-label">Select Gender</label>
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Activity Prompt -->
+<div class="prompt" id="prompt-activity">
+  <label class="slider-label">Activity Level</label>
+  <select id="activity">
+    <option value="sedentary">Sedentary</option>
+    <option value="moderate">Moderate</option>
+    <option value="active">Active</option>
+  </select>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Age Prompt -->
+<div class="prompt" id="prompt-age">
+  <input type="number" placeholder="Enter Age" id="age" min="1" max="100" />
+  <div class="error-message" id="age-error"></div>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Height Prompt -->
+<div class="prompt" id="prompt-height">
+  <input type="number" placeholder="Enter Height (cm)" id="height" min="50" max="300" />
+  <div class="error-message" id="height-error"></div>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Weight Prompt -->
+<div class="prompt" id="prompt-weight">
+  <input type="number" placeholder="Enter Weight (lb)" id="weight" min="20" max="600" />
+  <div class="error-message" id="weight-error"></div>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Sleep Prompt -->
+<div class="prompt" id="prompt-sleep">
+  <label class="slider-label">How would you rate your sleep hours? (1–10)</label>
+  <input type="range" min="1" max="10" step="1" id="sleep" value="8" />
+  <div class="slider-value" id="sleep-value">8</div>
+  <button onclick="nextPrompt()" class="small-button">Next</button>
+</div>
+
+<!-- Calorie Goal Prompt -->
+<div class="prompt" id="prompt-calories">
+  <label class="slider-label">Calorie Goal</label>
+  <input type="range" min="1000" max="4000" step="50" id="calories" value="1000" />
+  <div class="slider-value" id="calories-value">1000</div>
+  <button onclick="nextPrompt()" class="small-button">Finish</button>
+</div>
+
+<div class="prompt" id="prompt-score">
+  <div class="score-circle" id="score-circle">
+    <span id="score-result">0</span>/10
+  </div>
+  <p>Thank You!</p>
+
+  <div class="score-breakdown" id="score-breakdown" style="
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 300px;
+  ">
+    <h3 style="margin-top: 0; color: #e0a5fd">Breakdown</h3>
+    <div id="breakdown-details"></div>
+  </div>
+
+  <button onclick="resetApp()" class="small-button">Start Over</button>
+</div>
+<script>
+  document.getElementById('score-breakdown').classList.add('collapsed');
+  document.getElementById('score-breakdown').addEventListener('click', function(e) {
+    if (e.target.closest('h3') || e.target === this) {
+      this.classList.toggle('collapsed');
+      this.classList.toggle('expanded');
+    }
+  });
+</script>
+
+<script type="module" src="index.js"></script>
+
+</body>
+</html>
