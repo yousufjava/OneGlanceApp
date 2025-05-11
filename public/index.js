@@ -1,4 +1,4 @@
-import { calculateScore } from './scoreEngine.js';
+import { calculateScore } from '/scoreEngine.js';
 
 const prompts = document.querySelectorAll('.prompt');
 let currentPrompt = 0;
